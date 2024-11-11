@@ -1,0 +1,78 @@
+<!-- activity_user_dashboard.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/ic_main">
+
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Cattle Health. We are dedicated to provide quality reliable services for your cattle"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcomeMessage"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+        android:id="@+id/tvServices"
+        android:text="1. Incemination  Ksh. 2500 \n\n 2. Vaccination  Ksh 1500. \n\n 3. Deworming  Ksh 3000. \n\n 4. Dehorning  Ksh 1500. \n\n 5. Disease treatment is negotiable, price will be determined after examining the cow. \n\n\n You will pay half of the amount before and the rest after the service delivery. Thank You!"/>
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvServices"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="     Mpesa Number 0701824375"
+        android:inputType="phone"
+        android:lines="1"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/edtNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="            2000"
+        android:inputType="phone"
+        android:lines="1"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtAmount"
+        android:layout_marginTop="16dp"
+        android:text="Pay Now" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

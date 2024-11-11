@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "400643257633",
+    "firebase_url": "https://cattlehealth-d1583-default-rtdb.firebaseio.com",
+    "project_id": "cattlehealth-d1583",
+    "storage_bucket": "cattlehealth-d1583.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400643257633:android:da37aa86268c389cc7ba60",
+        "android_client_info": {
+          "package_name": "com.example.cattlehealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsD5zTzs5mlfCTtbraK5ZyVHCcPeJEy_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

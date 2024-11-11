@@ -1,0 +1,109 @@
+<!-- activity_veterinary_services.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/ic_main">
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Veterinary Services"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnDeworming"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDeworming"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Deworming"
+        app:cornerRadius="8dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDehorning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dehorning"
+        app:cornerRadius="8dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/btnDeworming"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInsemination"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Insemination"
+        app:cornerRadius="8dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/btnDehorning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVaccination"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vaccination"
+        app:cornerRadius="8dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/btnInsemination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDiseaseTreatment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Disease Treatment"
+        app:cornerRadius="8dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/btnVaccination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbShareLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Location"
+        app:layout_constraintTop_toBottomOf="@id/btnDiseaseTreatment"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
